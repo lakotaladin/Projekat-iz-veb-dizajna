@@ -1,0 +1,348 @@
+body,html{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    /* Da ne moze da se kopira tekst sa sajta,vazi za google,operu,mozilu */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    width: 100%;
+}
+.navbar-brand span{
+ color: white;
+ font-weight: bold;
+ padding: 2%;
+ background-color: orangered;
+ margin-left: 2%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+ .trade{
+     margin-top: -12%;
+ }
+.navbar-brand{
+    color: black;
+    font-weight: bold;
+    padding-left: 5%;
+}
+/* Efekat ispod linka u navigaciji */
+.nav-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orangered;
+    transition: width .3s;
+    }
+.nav-item:hover::after{
+      width: 100%;
+      transition: width .3s;
+      }
+.nav-item{
+    padding: 1% 1%;
+}
+.navbar-nav a:hover{
+    text-decoration: none;
+    padding: 8px;
+}
+nav ,.navbar{
+    padding: 0%;
+    color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    top: 0;
+}
+.navbar-toggler{
+    margin-right: 2%;
+}
+.navbar-nav{
+    font-size: 18px;
+}
+
+.margina{
+    margin-right:100px;
+}
+
+.naslov{
+    text-align: center;
+    padding: 2%;
+}
+.navbar-brand,a:hover{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+/* Sekcija */
+section,article{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.glavni{
+    width: 70%;
+    height: auto;
+    margin: 12% auto auto auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* RADIO */
+
+.radio{
+    background-image: url('youandme.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 15px 0 hsla(17, 100%, 52%, 0.2), 0 10px 20px 0 #fb8a1130;
+    width: 317px;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    margin: auto;
+}
+audio{
+    margin-top:97%;
+    outline-style: none;
+}
+/* Stelice na dole */
+
+#strdole{
+    width: 40%;
+    margin: 0%;
+    padding: 10% 4% 4% 4%; 
+    text-align: center;
+}
+
+/* Drugi glavni */
+
+.drugiglavni{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+    background-color: black;
+}
+.levi{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+.desni{
+    width: 100%;
+    height: 400px;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+.naslov{
+    font-size: 35px;
+    text-align: center;
+}
+/* Moja slika */
+.join{
+    position: relative;
+    width: auto;
+    height: 300px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+  
+/* Informacije o studentu prelazom krusora preko slike */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .mojaslika:hover .overlay {
+    height: 100%;
+  }
+  .mojaslika{
+      width: auto;
+      height: auto;
+      position: relative;
+      justify-content: center;
+      overflow: hidden;
+      padding: 0%;
+      margin: 0%;
+      color: white;
+  }
+  /* Tektst unutar adrese */
+address{
+    padding: 15% 0% 0% 0%;
+}
+  #b{
+    color: grey;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+  /* Znak ulevo */
+  #str{
+      width: 40%;
+      height: auto;
+      margin: auto;
+      padding: auto;
+  }
+
+  /* Potpis */
+.potpis{
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
+    padding: 5%;
+}
+
+/* Social media logotipovi */
+article{
+    padding: 0%;
+    margin: 0%;
+}
+.media{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin: 1%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 2px 50px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(15, 14, 14, 6.19);
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+.page-footer{
+    border-top: 5px solid orangered;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(15, 14, 14, 3.19);
+}
+.footer-copyright{
+    color: lightgrey;
+}
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    body,section{
+        width: 100%;
+    }
+    address{
+        margin-top: 12%;
+
+    }
+    #str{
+        width: 300px;
+        margin-left: -20%;
+    }
+    .gornji,.display-3,.img{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .join{
+        width: 100%; 
+        /* da se vidi slika cela */
+    }
+    /* Potpis */
+    .potp{
+        margin-left: 30%;
+        padding: 5%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    body,section,article{
+        width: 100%;
+        font-size: 10px;
+    }
+    address{
+        margin-top: 12%;
+
+    }
+    #str{
+        width: 300px;
+        margin-left: -20%;
+    }
+    .gornji,.donji,.display-3,.img{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        font-size: auto;
+    }
+    .join{
+        width: 100%; 
+        /* da se vidi slika cela */
+    }
+    /* Potpis */
+    .potp{
+        margin-left: 35%;
+        padding: 4%;
+    }
+  }
